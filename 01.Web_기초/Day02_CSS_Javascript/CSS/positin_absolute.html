@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .absolute {
+      background-color: aqua;
+      position: absolute;
+      /* 선언시 width가 inline처럼 줄어듬, 고정되지는 않는다. 겹쳐는 진다 */
+      /* absolute 기준점 : 선택적 (부모요소에 3차원 요소가 있다면 그렇지 않다면
+      그 상위가 기준점) */
+      right: 10px;
+    }
+    .parent {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: blueviolet;
+    }
+    .child {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="absolute">absolute</div>
+  <div class="parent">
+    <div class="child">child</div>
+  </div>
+</body>
+</html>

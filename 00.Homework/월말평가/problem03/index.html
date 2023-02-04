@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>      
+      .animal {
+        display: flex;
+        position: relative;
+        margin: 100px;
+      }
+      .hedgehog {
+        background-image: url(./hedgehog.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 15px solid black;
+        box-shadow: 3px 3px 3px 3px gray;
+        width: 500px;
+        height: 300px;
+        margin: 2px;
+      }
+      .dog {
+        background-image: url(./dog.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 15px solid black;
+        box-shadow: 3px 3px 3px 3px gray;
+        width: 200px;
+        height: 300px;
+        margin: 2px;
+      }
+      .new {
+        border-radius: 50%;
+        border: 1px solid black;
+        background-color: gold;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        position: absolute;
+        margin: -50px 50px;
+      }
+      .text {
+        font-size: 30pt;
+        font-weight: bold;
+        text-align: center;
+        margin-top: -5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="new">
+      <div class="text">NEW</div>
+    </div>
+    <div class="animal">
+      <div class="hedgehog"></div>
+      <div class="dog"></div>
+    </div>
+  </body>
+</html>

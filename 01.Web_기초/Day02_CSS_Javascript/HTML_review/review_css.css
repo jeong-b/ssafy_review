@@ -1,0 +1,14 @@
+ul {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+}
+
+a {
+  border: 1px solid red;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+}

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>My title</title>
+  </head>
+
+  <body>
+    <h1>A heading</h1>
+    <a class="mac" href="mcdonald.co.kr">Link text</a>
+  </body>
+
+  <script>
+    const a = document.children[0].children[1].children[0];
+    console.log(a.textContent);
+    a.textContent = "BBQ"
+
+    const h1Tag = document.querySelector("h1");
+    console.log(h1Tag);
+
+    const mac = document.querySelector(".mac");
+    console.log(mac);  
+    console.log(mac.textContent);
+    mac.textContent = "맥도날드"  
+  </script>
+</html>

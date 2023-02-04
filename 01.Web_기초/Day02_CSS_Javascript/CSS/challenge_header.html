@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 1200px;
+      border: 1px solid black;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 1200px;
+      width: 100%;            
+    }
+    div {
+      border: 1px solid black;
+    }
+    h1 {
+      flex: 10;
+      text-align: center;
+    }
+
+    .box1 {
+      flex: 1;
+      /* border-bottom: 1px solid black; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+    }
+    .menu {
+      flex: 1;
+      margin-top: 25px;
+      margin-left: 25px;
+      height: 50px;
+      width: 70px;
+    }
+    .option {
+      flex: 1;
+      margin-top: 25px;
+      margin-right: 25px;
+      height: 50px;
+      width: 70px;
+    }
+    /* .box2{
+      flex: 11;
+    } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">
+      <div class="menu">menu1</div>
+      <div class="menu">menu2</div>
+      <div class="menu">menu3</div>
+      <h1>logo</h1>
+      <div class="option">sign up</div>
+      <div class="option">sign in</div>
+    </div>
+    <!-- <div class="box2"></div> -->
+  </div>
+</body>
+</html>

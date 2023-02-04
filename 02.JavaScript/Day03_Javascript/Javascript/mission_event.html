@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sign-in-wrapper">
+      <input class="id-input" , type="text" , placeholder="아이디" />
+      <input class="pw-input" , type="password" , placeholder="비밀번호" />
+    </div>
+    <div class="sign-up">
+      <div>회원가입하기</div>
+    </div>
+
+    <script>
+      const signUp = document.querySelector(".sign-up");
+      const idInput = document.querySelector(".id-input");
+      const pwInput = document.querySelector(".pw-input");     
+      signUp.addEventListener("click", function (evt) {
+        if (idInput.value === "" || pwInput.value === "") {
+          alert("아이디 또는 비밀번호가 공란일 수 없습니다");
+        }        
+      });
+    </script>
+  </body>
+</html>

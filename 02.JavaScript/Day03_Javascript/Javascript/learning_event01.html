@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>이벤트</h1>
+    <!-- <button onclick="showMessage()">나를 클릭해</button> -->
+    <div>click me</div>
+
+    <script>
+      function showMessage() {
+        console.log("안녕!");
+      }
+
+      const div = document.querySelector("div");
+      div.addEventListener("click", showMessage);
+      div.addEventListener("click", function () {
+        console.log("즐거워");
+      });
+    </script>
+  </body>
+</html>

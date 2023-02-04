@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .font-red {
+        color: red;
+      }
+      .font-blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HI</h1>
+    <button class="red-btn">be Red</button>
+    <button class="black-btn">be Black</button>
+    <button class="change-btn">be change</button>
+    <button class="is-red-btn">is red?</button>
+    <button class="rtb-btn">red to blue</button>
+
+    <script>
+      const h1 = document.querySelector("h1");
+      const redBtn = document.querySelector(".red-btn");
+      const blackBtn = document.querySelector(".black-btn");
+      const changeBtn = document.querySelector(".change-btn");
+      const isRedBtn = document.querySelector(".is-red-btn");
+      const rtbBtn = document.querySelector(".rtb-btn")
+      redBtn.addEventListener("click", function (evt) {
+        h1.classList.add("font-red");
+      });
+      blackBtn.addEventListener("click", function (evt) {
+        h1.classList.remove("font-red");
+      });
+      changeBtn.addEventListener("click", function (evt) {
+        h1.classList.toggle("font-red");
+      });
+      isRedBtn.addEventListener("click", function (evt) {
+        const flag = h1.classList.contains("font-red");
+        console.log(flag);
+      });
+      rtbBtn.addEventListener("click", function(evt){
+        h1.classList.replace("font-red", "font-blue")
+      })
+    </script>
+  </body>
+</html>

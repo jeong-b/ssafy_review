@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .window-wrapper {
+        background-color: orange;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 700px;
+        height: 300px;        
+      }
+      .windows {
+        background-repeat: no-repeat;
+        border: 3px solid black;
+        border-radius: 10%;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        margin: 30px;
+      }
+      .window_1 {
+        background-image: url("./kakao_01.png");
+      }
+      .window_2 {
+        background-image: url("./kakao_02.png");        
+      }
+      .window_3 {
+        background-image: url("./kakao_03.png");
+      }
+      .window_4 {
+        background-image: url("./kakao_04.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="window-wrapper">
+      <div class="windows window_1"></div>
+      <div class="windows window_2"></div>      
+    </div>
+    <div class="window-wrapper">
+      <div class="windows window_3"></div>
+      <div class="windows window_4"></div>      
+    </div>
+  </body>
+</html>

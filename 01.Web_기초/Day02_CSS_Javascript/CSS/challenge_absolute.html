@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      position: relative;
+      height: 300px;
+      width: 300px;
+      background-color: blue;
+    }
+    .chlid1 {
+      position: absolute;
+      background-color: white;
+      right: -10px;
+      top: 0px;
+    }
+    .chlid2 {
+      position: absolute;
+      background-color: white;
+      right: -10px;
+      top: 45%;
+      transform: translateY(-50%);
+    }
+    .chlid3 {
+      position: absolute;
+      background-color: white;
+      right: -10px;
+      bottom: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="chlid1">children1</div>
+    <div class="chlid2">children2</div>
+    <div class="chlid3">children3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+/* header */
+.header-nav-list-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav-list-wrapper > li {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.toggle-button {
+  border: 1px solid #eee;
+  background-color: black;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* main */
+
+.main-container {
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.image-logo {
+  width : 272px;
+}
+
+.search-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+#search-input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding-left: 40px;
+}
+
+.search-icon {
+  width: 17px;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+
+.bookmark-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.bookmark-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  min-width: 430px;
+}
+
+.bookmark-item {
+  width: 112px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;  
+}
+
+.bookmark-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.image-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f2f3f5;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-icon-wrapper > img {
+  width: 60%;
+  height: 60%;
+}
+
+.bookmark-text {
+  margin-top: 5px;
+  color: black;
+}
+
+/* darkmode */
+
+.body-background-darkmode {
+  background-color: black;
+}
+
+.tooggle-button-darkmode {
+  background-color: white;
+  color: black;
+}
+
+.img-icon-wrapper-darkmode {
+  background-color: white;
+}
+
+.text-darkmode {
+  color: white;
+}

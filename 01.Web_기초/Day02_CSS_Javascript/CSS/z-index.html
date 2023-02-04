@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 120px;
+      height: 120px;
+      position: absolute;
+    }
+    .a {
+      background-color: red;
+      top: 20px;
+      left : 200px;
+      /* z-index는 3차원 요소로만 동작, 높은 값일 수록 우선순위가 높다 */
+      z-index: 10;
+    }
+    .b {
+      background-color: blue;
+      top: 50px;
+      left: 260px;
+    }
+    .c {
+      background-color: green;
+      top: 80px;
+      left: 230px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box a"></div>
+  <div class="box b"></div>
+  <div class="box c"></div>
+</body>
+</html>
