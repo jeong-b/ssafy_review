@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      nav {
+        position: fixed;
+      }
+      .clean-list {
+        color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        float: right;
+      }
+      .margin-side {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .text-clean {
+        text-decoration-line: none;
+        color: white;
+      }
+      header {
+        background-image: url(./images/header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .white {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .text-bold {
+        font-weight: bold;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .flex-center {
+        display: flex;
+        justify-content: center;;
+        align-items: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="logo" height="50px" />
+        </a>
+        <ul class="clean-list">
+          <li class="margin-side"><a class="text-clean" href="#">Home</a></li>
+          <li class="margin-side">
+            <a class="text-clean" href="#">Community</a>
+          </li>
+          <li class="margin-side"><a class="text-clean" href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1 class="display-1 mb-5 white">Cinema<br />Community</h1>
+      <button type="button" class="btn btn-primary btn-lg">Let's Go</button>
+    </header>
+
+    <section>
+      <div><h2 class="display-2 text-bold">Used Skills</h2></div>
+      <div class="icon">
+        <div class="list">
+          <img class="m-5" src="./images/web.png" alt="web" height="300px" />
+          <div>Web</div>
+        </div>
+        <div class="list">
+          <img class="m-5" src="./images/html5.png" alt="html5" height="300px" />
+          <div>HTML5</div>
+        </div>
+        <div class="list">
+          <img class="m-5" src="./images/css3.png" alt="Css3" height="300px" />
+          <div>CSS#</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="navbar bg-primary fixed-boottom white flex-center">
+      HTML & CSS project Created bt 서정빈
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
